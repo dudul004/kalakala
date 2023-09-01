@@ -1,0 +1,95 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>registrasi</title>
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+
+    <style>
+          @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300&family=Roboto:wght@400;500;700;900&display=swap');
+      body{
+        padding: 0;
+        margin: 0;
+        height: 100vh;
+        font-family: "poppins";
+       }
+
+      .btn-primary{
+        background-color: #f25bf1 !important;
+        border: none;
+        transition: .4s ease-in-out;
+      }
+
+      .btn-primary:hover{
+        background-color: #a304a3 !important;
+        border: none;
+      }
+
+       @media (max-width: 992px){
+        .hidden{
+          display: none !important;
+        }
+      }
+    </style>
+
+  </head>
+
+
+  <body>
+
+    <div class="row m-0 h-100">
+      
+    
+    <div class="col d-flex justify-content-center align-items-center">
+      <form class="w-75">
+        <h3 class="text-center mb-4">monggo registrasi</h3>
+        <div class="mb-3">
+          <label for="exampleInputEmail1" class="form-label">Email address</label>
+          <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+          <div id="emailHelp" class="form-text"></div>
+        </div>
+        <div class="mb-4">
+          <label for="exampleInputPassword1" class="form-label">Password</label>
+          <input type="password" class="form-control" id="exampleInputPassword1">
+        </div>
+        <button type="button" class="btn btn-primary w-100" data-bs-toggle="modal" data-bs-target="#exampleModal">Submit</button>
+        <div class="text-center mt-3">
+          <a href="#" class="text-decoration-none">login</a> 
+        </div>
+      </form>
+    </div>
+
+    <div class="col d-flex justify-content-center align-items-center hidden">
+        <img src="image/pict-login.svg" class="w-75 h-75" alt="image login">
+    </div>
+
+
+    </div>
+
+<!-- Modal -->
+<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h1 class="modal-title fs-5" id="exampleModalLabel">WARNINGGG!!!!!</h1>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        yakin dah bener?, cek dulu deh!!
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">cek dulu deh</button>
+        <button type="button" class="btn btn-primary">yakin dong</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+    <script src="js/bootstrap.bundle.min.js" ></script>
+
+
+  </body>
+
+
+</html>
